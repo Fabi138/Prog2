@@ -1,0 +1,1 @@
+{"01112019": [{"reisemittel": "zug", "von": "sdf", "bis": "sdf", "start_zeit": "", "ziel_zeit": "", "verspaetung": ""}]}
