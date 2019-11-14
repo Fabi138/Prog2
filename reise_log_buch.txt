@@ -1,1 +1,1 @@
-{"01112019": [{"reisemittel": "zug", "von": "sdf", "bis": "sdf", "start_zeit": "", "ziel_zeit": "", "verspaetung": ""}]}
+{"13112019": [{"reisemittel": "auto", "von": "Saas-Balen", "bis": "", "start_zeit": "16:35", "ziel_zeit": "17:00", "verspaetung": ""}], "14112019": [{"reisemittel": "zug", "von": "Saas-Balen", "bis": "Chur", "start_zeit": "13:00", "ziel_zeit": "18:00", "verspaetung": "5"}]}
