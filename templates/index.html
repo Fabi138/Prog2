@@ -7,34 +7,30 @@
     <div class="row">
         <div class="col-12 mb-3">
             <h1>Track your day</h1>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Datum</th>
-                    <th scope="col">Reisemittel</th>
-                    <th scope="col">Von</th>
-                    <th scope="col">Bis</th>
-                    <th scope="col">Start</th>
-                    <th scope="col">Ziel</th>
-                    <th scope="col">Verspätung</th>
-                  </tr>
-                </thead>
-                <tbody>
-                {% for key, reise in reisen.items() %}
-                    {% for trip in reise %}
-                    <tr>
-                        <th scope="row">{{ key|datetime }}</th>
-                        <td>{{ trip['reisemittel'] }}</td>
-                        <td>{{ trip['von'] }}</td>
-                        <td>{{ trip['bis'] }}</td>
-                        <td>{{ trip['start_zeit'] }}</td>
-                        <td>{{ trip['ziel_zeit'] }}</td>
-                        <td>{{ trip['verspaetung'] }}</td>
-                    </tr>
-                  {% endfor %}
-                {% endfor %}
-                </tbody>
-              </table>
+        </div>
+        <div class="col-6 h-25">
+            <a href="{{ url_for('list_journey') }}">
+            <div class="card bg-dark text-white">
+                <img class="card-img card-img-top" 
+                    src="{{url_for('static', filename='travel.jpeg')}}"
+                    alt="Card image">
+                <div class="card-img-overlay">
+                    <h3 class="card-title text-center">Track travel</h3>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-6">
+                <a href="">
+            <div class="card bg-dark text-white">
+                <img class="card-img card-img-top"
+                    src="{{url_for('static', filename='gaming.jpg')}}"
+                    alt="Card image">
+                <div class="card-img-overlay">
+                    <h3 class="card-title text-center">Track gaming</h3>
+                </div>
+            </div>
+            </a>
         </div>
     </div>
 </div>

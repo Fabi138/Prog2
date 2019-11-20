@@ -1,0 +1,51 @@
+{% extends "template.html" %}
+
+{% block title %}Travel overview{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <h1>Travel overview</h1>
+    </div>
+    <div class="col-6">
+      <a class="btn btn-primary float-right" href="{{ url_for('add_journey') }}" role="button">Add new Journey</a>
+    </div>
+    <div class="col-12 mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Datum</th>
+            <th scope="col">Reisemittel</th>
+            <th scope="col">Von</th>
+            <th scope="col">Bis</th>
+            <th scope="col">Start</th>
+            <th scope="col">Ziel</th>
+            <th scope="col">Verspätung</th>
+            <th scope="col">Reisezeit in Minuten</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for key, reise in reisen.items() %}
+          {% for trip in reise %}
+          <tr>
+            <th scope="row">{{ key|datetime }}</th>
+            <td>{{ trip['reisemittel'].capitalize() }}</td>
+            <td>{{ trip['von'] }}</td>
+            <td>{{ trip['bis'] }}</td>
+            <td>{{ trip['start_zeit'] }}</td>
+            <td>{{ trip['ziel_zeit'] }}</td>
+            <td>{{ trip['verspaetung'] }}</td>
+            <td>{{ trip['travel_time'] }}</td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-12">
+        {{ viz_div|safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}
