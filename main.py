@@ -29,6 +29,15 @@ def add_journey():
 
     return render_template("add_journey.html")
 
+@app.route("/list/game")
+def list_game():
+    return render_template("add_game.html")
+
+
+@app.route("/add/game", methods=['GET', 'POST'])
+def add_game():
+    return render_template("add_game.html")
+
 @app.template_filter('datetime')
 def format_date_for_index(value):
     date = datetime.strptime(value, '%d%m%Y')
