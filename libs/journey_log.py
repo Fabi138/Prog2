@@ -1,8 +1,8 @@
 from datetime import date
 from datetime import datetime
-import json
 from plotly.offline import plot
 import plotly.graph_objects as go
+from . import file_helper
 
 def save_new_trip(form_request):
     """Summary
@@ -39,8 +39,7 @@ def save_new_trip(form_request):
 
     reise[current_date] = current_date_data
     
-    with open('reise_log_buch.txt', "w", encoding="utf-8") as open_file:
-        json.dump(reise, open_file)
+    file_helper.save_data('reise_log_buch.txt', reise)
 
 def read_trips():
     """Summary
@@ -48,14 +47,7 @@ def read_trips():
     Returns:
         dict: all journeys 
     """
-    reise = {}
-    try:
-        with open('reise_log_buch.txt', "r") as open_file:
-            reise = json.load(open_file)
-    except:
-        print("Error with file at reise_log_buch.txt!")
-    finally:
-        return reise
+    return file_helper.read_data('reise_log_buch.txt')
 
 def pie_chart():
     """Summary
