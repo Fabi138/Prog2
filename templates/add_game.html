@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+
+{% block title %}Track your day{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <h1>Track your day</h1>
+            <hr>
+        </div>
+        <div class="col-12">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Was hast du gespielt?</label>
+                    <select name="game" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        {% for game, date in games.items() %}
+                        <option value="{{game}}">{{  game.capitalize() }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Wie viele Minuten hast du gespielt?</label>
+                    <input name="time" type="text" class="form-control" placeholder="5">
+                </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary my-1">Hinzufügen</button>
+    </div>
+    </form>
+</div>
+</div>
+</div>
+{% endblock %}

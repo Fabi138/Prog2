@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+
+{% block title %}Travel overview{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <h1>Game overview</h1>
+    </div>
+    <div class="col-6">
+        <a class="btn btn-outline-primary float-right mx-3" href="{{ url_for('manage_games') }}" role="button">Manage Games</a>
+      <a class="btn btn-primary float-right" href="{{ url_for('add_game') }}" role="button">Add Gametime now</a>
+    </div>
+    <div class="col-12 mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Datum</th>
+            <th scope="col">Spiel</th>
+            <th scope="col">Dauer in Minuten</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for key, day in games.items() %}
+          {% for game in day %}
+          <tr>
+            <th scope="row">{{ key|datetime }}</th>
+            <td>{{ game['game'].capitalize() }}</td>
+            <td>{{ game['time'] }}</td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-12">
+        {{ viz_div|safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}
