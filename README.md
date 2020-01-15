@@ -20,37 +20,37 @@ Um die Anwendung zu starten, müssen folgende Bedingungen erfüllt sein:
 ## Benutzung
 Graphische Benutzeranleitung Webapplikation:
 
-![Flowchart Overview](doku/Flowchart_Bedienung.png)
+![Flowchart Overview](doku/Flowchart_Bedienung.PNG)
 
 ## Neue Reise hinzufügen
 Beispiel Hinzufügen einer neuen Reise:
 
-![UML add journey](doku/add_journey.png)
+![UML add journey](doku/add_journey.PNG)
 
 ## Bedienung
 Die Bedienung der Webapplikation ist sehr intuitiv. Befindet man sich auf der Startseite, kann man via Drücken auf die Cards (Track tavel oder Track gaming) zu den Subpages gelagen, oder man kann via Navigationsbar direkt zur gewünschten Seite navigieren.
-![Startseite](doku/startseite.png)
+![Startseite](doku/startseite.PNG)
 
 ### Track Travels
 Möchte man nun die Reiszeit tracken, wählt man auf der Startseite (Track Travel aus) und gelangt somit auf diese Oberfläche (siehe Bild unten). Auf dieser Seite findet man auf einen Überblick alle eingegeben Reisedaten. Die Daten sind in tabellarischer sowie graphischer Form ersichtlich. Um eine neue Zeit hinzuzufügen, klickt man auf den Button (Add new Journey)
-![Übersicht Tack Journey](doku/travel_overview.png)
+![Übersicht Tack Journey](doku/travel_overview.PNG)
 
 Somit gelangt man auf diese Oberfläche (Bild unten), wo man sein Daten eingeben kann. Ist man mit den Daten zufrieden, können diese mit dem Button (Hinzufügen) hinzugefügt werden. Man gelangt anschliessend direkt wieder auf die Übersichtsseite.
-![Add Journey](doku/add_new_journey.png) 
+![Add Journey](doku/add_new_journey.PNG) 
 
 Übersichtsseite neu:
-![Neue Übersicht](doku/new_overview_travel.png)
+![Neue Übersicht](doku/new_overview_travel.PNG)
 
 ### Track Games
 Möchte man die Gamingzeit tracken kann man zurück zur Startseite gehen. Dies gelingt am schnellsten mit einem Klick auf "Track your Day" in der Navigationsbar. Hier wählt man nun die Card "Track Gaming" aus. Von dort gelangt man nun auf die Übersicht der Games.
-![Übersicht Games](doku/games_overview.png) 
+![Übersicht Games](doku/games_overview.PNG) 
 
 Hier kann man sich einen Überblick verschaffen, welche Spiele wie lange gespielt wurden. Zudem gibt es zwei Schaltflächen (Add Gamingtime now und Manage Games). 
 Wählt man nun "Manage Games" aus, können dort neue Spiele hinzugefügt werden (siehe Bild unten)
-![Manage Games](doku/manage_games.png)
+![Manage Games](doku/manage_games.PNG)
 
 Hat man ein gewünschtes Spiel hinzugefügt, kann man sich wieder zurück zur Übersicht navigieren oder man kann über die Navigationsbar --> Gaming Dropdown --> Add Game Session direkt eine neue Spielzeit tracken. Dies sieht so aus:
-![Track Gaming Time](doku/track_gaming.png)
+![Track Gaming Time](doku/track_gaming.PNG)
 
 Nach dem Hinzufügen des Spiels sowie der Spielzeit kann man sich nochmals die Übersicht anschauen.
-![Game overview](doku/games_overview2.png)
+![Game overview](doku/games_overview2.PNG)
