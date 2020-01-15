@@ -1,8 +1,12 @@
+"""
+summary: libary of functions to read, save, add and create pies of games
+"""
+from . import file_helper
 from datetime import date
 from datetime import datetime
 from plotly.offline import plot
 import plotly.graph_objects as go
-from . import file_helper
+
 
 def save_new_game(form_request):
     """Summary

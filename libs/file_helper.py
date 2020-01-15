@@ -1,3 +1,6 @@
+"""
+summary: read and save json data
+"""
 import json
 
 def read_data(filename):

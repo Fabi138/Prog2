@@ -1,3 +1,6 @@
+"""
+summary: libary of functions to read, save, add and create pies of trips
+"""
 from datetime import date
 from datetime import datetime
 from plotly.offline import plot
